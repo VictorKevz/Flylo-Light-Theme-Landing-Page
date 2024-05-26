@@ -3,7 +3,6 @@
   background-color: var(--very-dark-blue);
   width: 100%;
   color: var(--light-grayish-blue);
-  min-height: 391px;
 }
 .footer-container > img {
     display: block;
@@ -43,6 +42,7 @@
   
   /* For Small Screens */
 @media (max-width: 920px) {
+ 
  .footer-container>img{
   margin-block: 10%;
  }
@@ -55,4 +55,10 @@
  .social-links-container{
   margin: 10% auto;
   }
+}
+@media (width > 920px) {
+  .footer-container{
+    height: 391px;
+
+  } 
 }
