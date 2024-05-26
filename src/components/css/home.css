@@ -1,0 +1,97 @@
+/* For Small Screens */
+@media (max-width: 920px) {
+  .welcome-container {
+    grid-template-columns: 1fr;
+  }
+  .item.text {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .home-container {
+    min-height: 680px;
+  }
+  
+  form{
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  input,button{
+    width: 100%;
+  }
+}
+
+/* For Large Screens */
+@media (min-width: 920px) {
+  .welcome-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item.image {
+    grid-area: 1/2/-1/-1;
+  }
+  .home-container {
+    height: 680px;
+  }
+  .home-container li:not(:first-child) {
+    margin-left: 56px;
+  }
+}
+/* This is not a good idea!!!! */
+@media (min-width:681px) and (max-width:920px){
+  .home-container li:not(:first-child) {
+    margin-left: 56px;
+  }
+}
+nav,
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+  list-style-type: none;
+}
+.home-container ul li {
+  color: var(--desaturated-blue);
+}
+
+.welcome-container {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 5%;
+  margin-top: 7.5%;
+}
+.item.image > img {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.item.text {
+  align-items: center;
+  display: flex;
+}
+.item.text > div > p {
+  padding-bottom: 28px;
+}
+@media (max-width:680px) {
+  .logo-container>img{
+    height:  30px;
+    margin-bottom: 10%;
+    
+  }
+  h1{
+    font-size: 1.9rem;
+  }
+  nav,
+.nav-links {
+  flex-direction: column;
+}
+ul.nav-links li{
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+.home-container li:not(:first-child) {
+  margin-top: 10%;
+}
+}

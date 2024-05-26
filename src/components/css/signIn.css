@@ -1,0 +1,56 @@
+.sign-in-container {
+  display: grid;
+  color: var(--light-grayish-blue);
+  align-items: center;
+  background-color: var(--desaturated-blue);
+  min-height: 322px;
+
+}
+.item.sign-in-text>p{
+  max-width: 90%;
+}
+.sign-in-container > form {
+  display: block;
+  margin-left: auto;
+}
+.sign-in-container > form > button {
+  margin-top: 5%;
+}
+/* For Small Screens */
+@media (max-width: 920px) {
+  .sign-in-container {
+    grid-template-columns: 1fr;
+    margin: 10% auto 0 auto ;
+    row-gap: 5%;
+    text-align: center;
+  }
+  .sign-in-container > form > button {
+    width: 100%;
+  }
+  .sign-in-container > form > input {
+    width: 100%;
+  }
+  .sign-in-container>form{
+    margin: 0 auto;
+  }
+  .item.sign-in-text>p{
+    margin: 0 auto;
+  }
+}
+
+/* For Large Screens */
+@media (min-width: 920px) {
+  .sign-in-container {
+    grid-template-columns: 1fr 1.5fr;
+    padding: 7.5% 0;
+
+   
+  }
+  .sign-in-container > form > button {
+    margin-top: 16px;
+    width: 50%;
+  }
+  .sign-in-container > form > label>input {
+      width: 480px;
+    }  
+}

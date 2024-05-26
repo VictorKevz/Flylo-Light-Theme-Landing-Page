@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /* Primary Colors */
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+
+  /* Accent Colors */
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+
+  /* Neutral Colors */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/******************* These styles apply to all the selected elements ****************** */
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Raleway", sans-serif;
+ 
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+h1,
+h2 {
+  font-size: 3.5rem;
+  color: var(--very-dark-blue);
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 3rem;
+}
+h4{
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #fff;
+
+ 
+}
+p{
+  font-family: "Open Sans", sans-serif;
+
+}
+p,
+li,
+a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+a,li{
+  font-family: "Raleway", sans-serif;
+
+}
+img {
+  transition: transform 0.3s ease;
+}
+/* ----------------- Hover Effects & Animations For All Elements ----------------- */
+img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  animation: shake 0.5s ease;
+}
+button{
+box-shadow: 0px 5px 5px var(--desaturated-blue);
+
+}
+button:hover{
+  opacity: .8;
+  cursor: pointer;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+.home-container ul li:hover{
+  border-bottom: 3px solid var(--desaturated-blue);
+  color: var(--moderate-cyan);
+  cursor: pointer;
+}
+.footer-container ul li:hover{
+  color: var(--moderate-cyan);
+  cursor: pointer; 
+}
+/* ----------------- Hover Effects & Animations For All Elements ----------------- */
+
+/******************* These styles apply to all the selected elements ****************** */
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+ 
+  position: relative;
+}
+.home-container,.sign-in-container,.footer-container{
+ 
+  padding: 4.7%;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+footer > a {
+  color: hsl(10, 79%, 65%);
+  font-weight: 900;
+}

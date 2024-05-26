@@ -1,0 +1,32 @@
+form {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 0.5fr;
+  max-width: 90%;
+}
+label > input,
+button {
+  height: 44px;
+  border-radius: 3px;
+}
+button {
+  width: 90%;
+  border: none;
+  background-color: var(--bright-blue);
+  color: var(--light-grayish-blue);
+  font-weight: 700;
+}
+input {
+  width: 100%;
+  border: 1px solid var(--very-dark-blue);
+  padding-left: 21px;
+}
+.error-message {
+  color: rgb(213, 119, 119);
+  font-weight: 500;
+  display: block;
+}
+.error{
+    border: 1px solid rgb(213, 119, 119);
+   
+}
