@@ -3,7 +3,6 @@
   color: var(--light-grayish-blue);
   align-items: center;
   background-color: var(--desaturated-blue);
-  min-height: 322px;
 
 }
 .item.sign-in-text>p{
@@ -43,6 +42,8 @@
   .sign-in-container {
     grid-template-columns: 1fr 1.5fr;
     padding: 7.5% 0;
+    height: 322px;
+
 
    
   }
